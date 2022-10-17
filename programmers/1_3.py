@@ -9,5 +9,5 @@ for i in range(1, N + 1):
     else:
         faillist[i] = 0
 print(faillist)
-a = sorted(faillist, key=lambda i: faillist[i], reverse=True)
-print(a)
+return sorted(faillist, key=lambda x: faillist[x], reverse=True)
+#딕셔너리는 정렬하면 keys만 남음, 정렬은 faillist[x]이므로 value로 정렬
