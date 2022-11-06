@@ -1,4 +1,4 @@
-# 다익스트라 알고리즘 이용 -> 함수 활용하여 풀기
+# 최단거리는 다익스트라 알고리즘 이용 -> 함수 활용하여 풀기
 # -> 해당 함수는 건드리지 말고 최단 경로를 찾아주는 하나의 메서드로 볼 것
 # 문제에 맞게 메인함수만 바꿔주면 됨
 from heapq import heappop, heappush
@@ -6,7 +6,6 @@ from heapq import heappop, heappush
 INF = int(1e9)
 
 def dijkstra(src, dst):
-    global graph
     table = [INF for i in range(len(graph))]
     table[src] = 0
     pq = [[0, src]]
